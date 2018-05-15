@@ -36,13 +36,11 @@ app.post('/api/brands',(req,res) => {
 app.put('/api/modify/:_nume',(req,res) =>{
     var id = req.params._nume
     var brand = req.body
-    console.log(id)
-    console.log(brand)
-    Brand.updateBrands(id, brand, {},(err, brand)=>{
+    Brand.updateBrands(id, brand, {},(err, brandi)=>{
         if (err){
             throw err
         }
-        res.json(brand)
+        res.json(brandi)
     })
 })
 

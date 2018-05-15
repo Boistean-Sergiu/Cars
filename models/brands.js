@@ -45,3 +45,4 @@ module.exports.deleteBrand = (brand, callback) =>{
     const query = {name: brand.name}
     Brands.remove(query, callback)
 }
+
