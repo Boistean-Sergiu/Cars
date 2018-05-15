@@ -7,15 +7,15 @@ var  brandSchema = mongoose.Schema({
     },
     country: {
         type: String,
-        requre: true
+        required: true
     },
     sold: {
         type: Number,
-        require: true
+        required: true
     },
     returned: {
         type: Number,
-        require: true
+        required: true
     }
 },{
     versionKey: false})
@@ -45,4 +45,3 @@ module.exports.deleteBrand = (brand, callback) =>{
     const query = {name: brand.name}
     Brands.remove(query, callback)
 }
-
