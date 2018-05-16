@@ -1,0 +1,8 @@
+
+use Cars
+db.createCollection('brands');
+db.brands.insert({name : "Audi" , country: "Germany", sold: 0, returned: 0});
+db.brands.insert({name : "Honda" , country: "Japan", sold: 0, returned: 0});
+db.brands.insert({name : "Lamborghini" , country: "Italy", sold: 0, returned: 0});
+db.brands.insert({name : "Volvo" , country: "Germany", sold: 0, returned: 0});
+db.brands.insert({name : "Jaguar" , country: "United Kingdom", sold: 0, returned: 0});
