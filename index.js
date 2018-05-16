@@ -14,7 +14,7 @@ const db = mongoose.connection
 
 Brand = require('./models/brands.js')
 
-app.get('/all',(req,res)=>{    
+app.get('/api/all',(req,res)=>{    
     Brand.getBrands((err, brands) =>{
         if (err){
             throw err
